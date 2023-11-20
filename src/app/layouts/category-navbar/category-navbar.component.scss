@@ -1,0 +1,39 @@
+@import "../../../styles.scss";
+
+nav {
+  height: 8%;
+  background-color: $navbar-footer-color;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed; // Added this
+  width: 100%; // Added this
+  top: 70px; // Added this, adjust as per the height of your header
+  left: 0; // Added this
+  z-index: 1; // Added this
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: "$primary-color";
+}
+
+.navbar {
+  padding: 0 5%;
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+
+    .nav-item {
+      margin-left: 4rem;
+
+      .nav-link {
+        color: #343a40;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+}

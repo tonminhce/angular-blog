@@ -1,0 +1,40 @@
+@import "../../../styles.scss";
+
+footer {
+  height: auto;
+  padding: 2rem 5%;
+  background-color: $navbar-footer-color;
+  margin-top: 85vh;
+  font-size: 0.7rem;
+  color: $primary-color;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    margin-bottom: 1rem;
+    justify-content: center;
+
+    .nav-item {
+      margin: 0 1rem;
+
+      .nav-link {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+          color: darken($primary-color, 20%);
+        }
+      }
+    }
+  }
+
+  .credit-text {
+    text-align: center;
+    color: black;
+  }
+}
